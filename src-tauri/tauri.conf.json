@@ -1,0 +1,37 @@
+{
+    "productName": "tauri-test",
+    "version": "0.0.0",
+    "identifier": "test.test.test",
+    "build": {
+        "beforeDevCommand": "vite dev",
+        "devUrl": "https://127.0.0.1:3000",
+        "beforeBuildCommand": "vite build",
+        "frontendDist": "../build"
+    },
+    "app": {
+        "windows": [
+            {
+                "title": "tauri-test",
+                "width": 800,
+                "height": 600,
+                "fullscreen": false,
+                "resizable": false
+            }
+        ],
+        "security": {
+            "csp": null
+        }
+    },
+    "bundle": {
+        "active": true,
+        "targets": "all",
+        "icon": [
+            "icons/32x32.png",
+            "icons/128x128.png",
+            "icons/128x128@2x.png",
+            "icons/icon.icns",
+            "icons/icon.ico"
+        ]
+    },
+    "$schema": "../node_modules/@tauri-apps/cli/schema.json"
+}

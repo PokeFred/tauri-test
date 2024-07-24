@@ -6,9 +6,12 @@
 node_modules/**
 .svelte-kit/**
 build/**
+src-tauri/target/**
+src-tauri/gen/**
 
 # Files
 .env
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
+src-tauri/Cargo.lock

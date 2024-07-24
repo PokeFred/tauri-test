@@ -4,10 +4,11 @@
     "type": "module",
     "private": true,
     "scripts": {
-        "dev": "vite dev",
-        "build": "vite build"
+        "dev": "tauri dev",
+        "build": "tauri build"
     },
     "dependencies": {
+        "@tauri-apps/api": "2.0.0-beta.15",
         "dotenv": "^16.4.5"
     },
     "devDependencies": {
@@ -15,6 +16,7 @@
         "@sveltejs/enhanced-img": "^0.3.0",
         "@sveltejs/kit": "^2.5.18",
         "@sveltejs/vite-plugin-svelte": "^3.1.1",
+        "@tauri-apps/cli": "2.0.0-beta.22",
         "svelte": "^4.2.18",
         "tslib": "^2.6.3",
         "typescript": "^5.5.4",
