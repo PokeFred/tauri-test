@@ -2,10 +2,14 @@
     import { onMount } from "svelte"
     import { invoke } from "@tauri-apps/api/core"
 
-    let ttt: string = "Loading..."
-    onMount(async (): Promise<void> => {
-        ttt = JSON.parse(await invoke("ttt")).origin
-    })
+    let authCheck: string = "Loading..."
+    async function checkAuth() {
+        authCheck = "Loading..."
+        authCheck = await invoke("check_auth")
+    }
+
+    onMount(checkAuth)
 </script>
 
-<div>IP: {ttt}</div>
+<button on:click={checkAuth}>Reload</button>
+<div>{authCheck}</div>

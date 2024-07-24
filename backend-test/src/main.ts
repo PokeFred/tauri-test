@@ -12,9 +12,14 @@ app.use(async (req: Request, res: Response, next: NextFunction): Promise<void> =
 app.post("/", async (req: Request, res: Response): Promise<void> => {
     const cookies: Cookies = new Cookies(req, res)
 
-    res
-        .writeHead(200, { "Content-Type": "application/json" })
-        .end(JSON.stringify({ message: "Hello, World!" }))
+    console.log("[server] received request")
+    console.log(req.body)
+
+    setTimeout(async (): Promise<void> => {
+        res
+            .writeHead(200, { "Content-Type": "application/json" })
+            .end(JSON.stringify({ message: "Hello, World!" }))
+    }, 1000)
 })
 
 app.listen(3000, "127.0.0.1", (): void => {

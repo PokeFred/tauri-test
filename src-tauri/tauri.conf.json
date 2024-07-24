@@ -4,7 +4,7 @@
     "identifier": "test.test.test",
     "build": {
         "beforeDevCommand": "vite dev",
-        "devUrl": "https://127.0.0.1:3000",
+        "devUrl": "https://127.0.0.1:3001",
         "beforeBuildCommand": "vite build",
         "frontendDist": "../build"
     },

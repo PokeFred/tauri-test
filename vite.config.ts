@@ -7,7 +7,7 @@ import mkcert from "vite-plugin-mkcert"
 const serverConfig: CommonServerOptions = {
     https: true,
     host: "127.0.0.1",
-    port: 3000,
+    port: 3001,
     strictPort: true,
     proxy: {}
 }
