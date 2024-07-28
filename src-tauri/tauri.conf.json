@@ -11,7 +11,7 @@
     "app": {
         "windows": [
             {
-                "title": "tauri-test",
+                "title": "CannaSpezial",
                 "width": 800,
                 "height": 600,
                 "fullscreen": false,
